@@ -9,6 +9,8 @@ import {
   createBrowserRouter,
   RouterProvider,
   Route,
+  Routes,
+  BrowserRouter,
 } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -32,6 +34,13 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <HeaderBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 )
