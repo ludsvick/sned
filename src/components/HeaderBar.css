@@ -1,0 +1,29 @@
+.navbar-main {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background-color: whitesmoke;
+    height: clamp(50px, 5vh, 5%);
+    overflow: hidden;
+}
+
+.navbar-content {
+    display: inline;
+    padding: 2% 10%;    
+}
+
+.navbar-content:hover {
+    color: pink;
+    background-color: grey;
+}
+
+.active {
+    color: red;
+    background-color: navajowhite;
+}
+
+.active:hover {
+    color: red;
+}
