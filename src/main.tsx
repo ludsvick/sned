@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from './routes/Home'
 import About from './routes/About';
+import Contact from './routes/Contact';
 import HeaderBar from './components/HeaderBar'
 import './index.css'
 import {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <Home />,
+    element: <Contact />,
   },
 ]);
 
