@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import reactLogo from '../assets/react.svg'
 import './Home.css'
-import HeaderBar from '../components/HeaderBar';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,7 +8,6 @@ function App() {
 
   return (
     <div className="App">
-      <HeaderBar></HeaderBar>
       <header>
         <h1>Contact Us</h1>
       </header>
