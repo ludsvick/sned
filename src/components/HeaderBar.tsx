@@ -6,10 +6,10 @@ function HeaderBar() {
     return (
         <div className="navbar-main">
             <NavLink
-            to="/home"
+            to="/"
             className = {({ isActive }) =>
                 isActive ? "navbar-content active" : "navbar-content"
-            }>
+            } end >
                 SNED
             </NavLink>
             <NavLink
