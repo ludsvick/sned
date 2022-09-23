@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Something New, Every Day!</h1>
+        <h1>Contact Us</h1>
       </header>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>

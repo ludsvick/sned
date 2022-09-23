@@ -1,13 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from './routes/Home'
-import FakeHome from './routes/FakeHome';
+import About from './routes/About';
+import Contact from './routes/Contact';
 import HeaderBar from './components/HeaderBar'
 import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
+  Routes,
+  BrowserRouter,
 } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -21,16 +24,23 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <FakeHome />,
+    element: <About />,
   },
   {
     path: "/contact",
-    element: <Home />,
+    element: <Contact />,
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <HeaderBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 )
