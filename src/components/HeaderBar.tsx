@@ -6,6 +6,13 @@ function HeaderBar() {
     return (
         <div className="navbar-main">
             <NavLink
+            to="/about"
+            className = {({ isActive }) =>
+                isActive ? "navbar-content active" : "navbar-content bordered"
+            }>
+                About
+            </NavLink>
+            <NavLink
             to="/"
             className = {({ isActive }) =>
                 isActive ? "navbar-content active" : "navbar-content"
@@ -13,16 +20,9 @@ function HeaderBar() {
                 SNED
             </NavLink>
             <NavLink
-            to="/about"
-            className = {({ isActive }) =>
-                isActive ? "navbar-content active" : "navbar-content"
-            }>
-                About
-            </NavLink>
-            <NavLink
             to="/contact"
             className = {({ isActive }) =>
-                isActive ? "navbar-content active" : "navbar-content"
+                isActive ? "navbar-content active" : "navbar-content bordered"
             }>
                 Contact
             </NavLink>
