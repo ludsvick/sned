@@ -12,7 +12,7 @@ At the time of writing (9/23/22), the project is very much in its infancy and ne
 
 ## Current Development Roadmap
 <ol>
-<strong><span style="color:blue"><li>Establish base framework</li></span></strong>
+<strong><em><li>Establish base framework</li></em></strong>
 <li>Determine means of 'resetting' the site daily</li>
 <li>Develop and deliver multiple pages for release</li>
 <li>Promote, promote, promote</li>
