@@ -15,23 +15,26 @@
     transition: 400ms ease-in-out 30ms;
 }
 
-.navbar-content:hover {
-    color: white;
-    background-color: blue;
-    padding: 2% 12%;
-    transition: 250ms ease-in-out 20ms;
-}
-
 .active {
     color: crimson;
     background-color: darkblue;
 }
 
-.active:hover {
-    color: white;
-}
 
 .bordered {
     border-left: 1px solid black;
     border-right: 1px solid black;
+}
+
+@media (hover: hover) {
+    .active:hover {
+        color: white;
+    }
+    
+    .navbar-content:hover {
+        color: white;
+        background-color: blue;
+        padding: 2% 12%;
+        transition: 250ms ease-in-out 20ms;
+    }
 }
