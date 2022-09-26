@@ -8,7 +8,7 @@ function HeaderBar() {
             <NavLink
             to="/about"
             className = {({ isActive }) =>
-                isActive ? "navbar-content active" : "navbar-content bordered"
+                isActive ? "navbar-content bordered active" : "navbar-content bordered"
             }>
                 About
             </NavLink>
@@ -22,7 +22,7 @@ function HeaderBar() {
             <NavLink
             to="/contact"
             className = {({ isActive }) =>
-                isActive ? "navbar-content active" : "navbar-content bordered"
+                isActive ? "navbar-content bordered active" : "navbar-content bordered"
             }>
                 Contact
             </NavLink>
