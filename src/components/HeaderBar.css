@@ -7,6 +7,8 @@
     background-color: lightblue;
     height: clamp(50px, 5vh, 5%);
     overflow: hidden;
+    position: sticky;
+    top: 0;
 }
 
 .navbar-content {
@@ -18,6 +20,7 @@
 .active {
     color: crimson;
     background-color: darkblue;
+    font-size: 120%;
 }
 
 
