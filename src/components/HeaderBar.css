@@ -33,7 +33,7 @@
     .active:hover {
         color: white;
     }
-    
+
     .navbar-content:hover {
         color: white;
         background-color: blue;
@@ -41,4 +41,19 @@
         font-size: 120%;
         transition: 250ms ease-in-out 20ms;
     }
+}
+
+@media (hover: none) {
+    .navbar-content:hover {
+        color: white;
+        background-color: blue;
+        transition: 250ms ease-in-out 20ms;
+    }
+    
+    .active:hover {
+        color: crimson;
+        background-color: darkblue;
+        transition: 250ms ease-in-out 20ms;
+    }
+
 }
