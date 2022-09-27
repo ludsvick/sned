@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import reactLogo from '../assets/react.svg'
-import './Home.css'
+import './About.css'
 
 function App() {
   const [count, setCount] = useState(0);
   
 
   return (
-    <div className="App">
+    <div className="About">
       <header>
         <h1>What is <em><span style={{color: "red"}}>SNED</span></em>?</h1>
         <h2>Fair question. It's pretty unique!</h2>
@@ -16,7 +16,7 @@ function App() {
         <h3>Why did you make this website?</h3>
         <p>The reason is simple; every day, people use websites to learn, to explore, to be entertained.
           What makes a website popular isn't that they explicitly adhere to one of these concepts,
-          instead they do so with <em>consistent quality</em>.<br />
+          instead they do so with <em>consistent quality</em>.<br /><br />
           We were frustrated by the standard development method of
           "have an idea, make website here, advertise there, and hope people visit". So we set out to make a rotating
           showcase of exceptional concepts from passionate web developers.
@@ -45,7 +45,7 @@ function App() {
         <p>To ensure that the website maintains consistent quality to the end user, we <em>will</em> be picky.
         So picky, in fact, that we have a set of requirements that need to be met. We are not aiming to be
         exclusive, rather we hope to ensure that hard work is rewarded. This website is (as of the time of writing) built with React,
-        but we won't discriminate form using any libraries compatible with it.<br />
+        but we won't discriminate form using any libraries compatible with it.<br /><br />
         Be sure to grab a starter template <a href="">here</a>, and make sure it passes all of the <a href="">tests</a>
         .</p>
         <button onClick={() => setCount((count) => count + 1)}>
