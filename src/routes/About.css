@@ -5,26 +5,63 @@
 }
 
 .About {
-  margin: 0 2%;
+  margin: 0 clamp(0%, 2vw, 25%);
 }
 
-.About h1 {
-  font-size: 3.5em;
-}
 
 .About main {
   text-align: left;
 }
 
-h2 {
-  font-size: 2.25rem;
+.About h1 {
+  font-size: clamp(2.5em, 5vw, 3.5em);
 }
 
-h3 {
-  font-size: 1.75rem;
+.About h2 {
+  font-size: clamp(1.75em, 3.5vw, 2.75em);
+  color: #b6b6b6;
+}
+
+.About h3 {
+  font-size: clamp(1.25em, 3vw, 2em);
+  font-style: oblique;
+  line-height: 1.25;
+}
+
+.About p {
+  color: #a8a8a8;
+  font-size: clamp(.75em, 2.5vw, 1.5em);
+  line-height: 1.5;
+  width: clamp(90%, 50vw, 95vw);
+  text-align: left;
+}
+
+.About .Q-and-A {
+  margin-bottom: 1vh;
+}
+
+.About .Q-and-A:first-of-type {
+  margin-top: 5%;
+}
+
+.About .Q-and-A:last-of-type {
+  margin-bottom: 0;
+}
+
+.About a {
+  color: #09ff;
   text-decoration: underline;
 }
 
-p {
-  font-size: 1.25rem;
+.About a:hover {
+  color: #990090;
+  text-decoration-style: wavy;
+}
+
+.About strong {
+  color: #bbffbb;
+}
+
+.About .Q-and-A p em {
+  color: #c0c0c0;
 }
