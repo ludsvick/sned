@@ -7,7 +7,7 @@ function App() {
   
 
   return (
-    <div className="App">
+    <div className="About">
       <header>
         <h1>What is <em><span style={{color: "red"}}>SNED</span></em>?</h1>
         <h2>Fair question. It's pretty unique!</h2>
