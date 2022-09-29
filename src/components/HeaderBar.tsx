@@ -4,7 +4,8 @@ import './HeaderBar.css';
 
 function HeaderBar() {
     return (
-        <div className="navbar-main">
+        <div className="navbar-main"
+        onTouchStart={() => {}}>
             <NavLink
             to="/about"
             className = {({ isActive }) =>
